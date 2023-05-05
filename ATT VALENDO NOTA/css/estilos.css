@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  border: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #ded6d6;
+}
+
+
+/*Cabeçalho*/
+header {
+  background-color: #870301;
+  width: 100%;
+  height: 70px;
+  text-align: right;
+  justify-content: space-between;
+}
+
+header nav {
+  align-self: flex-end;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 25px 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 33px;
+}
+
+header nav a:hover {
+  color: #db0000;
+}
+
+/*Fim do header*/
+#container {
+  text-align: center;
+}
+
+
+#btnObterDados {
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #870301;
+  color: white;
+  font-size: 17px;
+  text-shadow: 1px 2px 2px #410201;
+  cursor: pointer;
+}
+
+#div-erro {
+  background-color: firebrick;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  display: none;
+  margin-top: 25px;
+}
+
+#mapa {
+  margin-top: 70px;
+  margin-left: 25%;
+  margin-bottom: 40px;
+  width:800px ;
+  height: 500px;
+  border-radius: 10px;
+}
+
+#pizza {
+  background-color: rgb(222, 214, 214);
+  height:300px;
+}
+
+#coisas {
+  display: flex;
+  flex-direction: row;
+  padding: 50PX;
+}
+
+#tabela {
+  margin-top: 50px;
+}
+
+#foto {
+  width: 500px;
+  height: 500px;
+  padding-top: 70px;
+}
+
+#miolo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1 {
+  background-color: #db0000;
+  color: white;
+}
+
+#p1 {
+  text-align: justify;
+}
+
+footer {
+  background-color: #410201;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos para telas com largura entre 768px e 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: auto;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  header nav a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  #container {
+    margin-top: 20px;
+  }
+
+  #mapa {
+    margin-top: 20px;
+    width: 80%;
+    height: 400px;
+  }
+
+  #coisas {
+    flex-direction: column;
+  }
+
+  #tabela {
+    margin-top: 20px;
+  }
+
+  #div-erro {
+    margin-top: 20px;
+  }
+
+  #btnObterDados {
+    margin-top: 20px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      padding: 0 20px;
+    }
+  
+    header nav {
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
+    }
+  
+    header nav a {
+      margin-left: 20px;
+      padding: 10px 15px;
+      font-size: 18px;
+    } 
+  
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 80px;
+    }
+  
+  
+    #btnObterDados {
+      margin-top: 40px;
+      padding: 15px 30px;
+      font-size: 20px;
+    }
+  
+  
+    #mapa {
+      margin: 0;
+      margin-top: 0;
+      height: 500px;
+      width: 90%;  
+    }
+  
+    #tabela {
+      width: 50%;
+      margin-left: 5%;
+    }
+  
+  
+    #pizza {
+      margin: 40px, 10px;
+      margin-top: 40px;
+      width: 90%;
+      height: 500px;
+    }
+  
+  
+    #coisas {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
